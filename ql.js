@@ -25,7 +25,7 @@ async function getToken() {
   return authConfig.token;
 }
 
-module.exports.getEnvs = async (envName='elmck') => {
+module.exports.getEnvs = async (envName='ELE_CARME') => {
   const token = await getToken();
   const body = await api({
     url: 'api/envs',
@@ -71,7 +71,7 @@ module.exports.addEnv = async (cookie, remarks) => {
     url: 'api/envs',
     params: { t: Date.now() },
     json: [{
-      name: 'elmck',
+      name: 'ELE_CARME',
       value: cookie,
       remarks,
     }],
@@ -84,7 +84,7 @@ module.exports.addEnv = async (cookie, remarks) => {
   return body;
 };
 
-module.exports.updateEnv = async (cookie, eid, remarks,envName='elmck') => {
+module.exports.updateEnv = async (cookie, eid, remarks,envName='ELE_CARME') => {
   const token = await getToken();
   const body = await api({
     method: 'put',
@@ -105,7 +105,7 @@ module.exports.updateEnv = async (cookie, eid, remarks,envName='elmck') => {
   return body;
 };
 
-module.exports.updateEnv11 = async (cookie, eid, remarks,envName='elmck') => {
+module.exports.updateEnv11 = async (cookie, eid, remarks,envName='ELE_CARME') => {
   const token = await getToken();
   const body = await api({
     method: 'put',
@@ -159,7 +159,7 @@ module.exports.EnableCk = async (eid) => {
 };
 
 module.exports.getstatus = async(eid) => {
-  var envs = await getEnvsByName('elmck');
+  var envs = await getEnvsByName('ELE_CARME');
   var tempid = 0;
   for (let i = 0; i < envs.length; i++) {
     tempid = 0;

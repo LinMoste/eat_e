@@ -125,7 +125,7 @@ async function _0x109797(_0x59c2bc, _0x44a872) {
 async function _0x12d072() {
     //await _0x4cfa40(_0x57253e, 1);
 
-    const _0x1b7a0a = _0x313a08("elmck");
+    const _0x1b7a0a = _0x313a08("ELE_CARME");
     for (let _0x5c83c6 = 0; _0x5c83c6 < _0x1b7a0a.length; _0x5c83c6++) {
         let _0x24b3c4 = _0x1b7a0a[_0x5c83c6],
             _0x2dd844 = await getUserInfo(_0x24b3c4, _0x1c5d9a),

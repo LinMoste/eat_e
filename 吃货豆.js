@@ -157,7 +157,7 @@ class USER extends REQ {
 }
 (async () => {
     await validateCarmeWithType(ELE_CARME, 1);
-    const _0x33573a = getCookies("elmck"),
+    const _0x33573a = getCookies("ELE_CARME"),
         {
             latitude: _0x1a8782,
             longitude: _0x29b842
