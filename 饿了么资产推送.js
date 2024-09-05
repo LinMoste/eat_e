@@ -1,3 +1,9 @@
+/**
+ * 任务名称
+ * name: 资产推送
+ * 定时规则
+ * cron: 1 21 * * *
+ */
 //Wed Aug 14 2024 15:08:23 GMT+0800 (中国标准时间)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
