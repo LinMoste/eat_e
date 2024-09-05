@@ -282,9 +282,7 @@ function _0x10d424(_0x18bf21) {
 }
 async function _0x40ed21(_0x313041, _0x5a8d08) {
     const _0x45affd = _0x10d424(_0x313041);
-    await sendNotify("登录失效通知", "### 通知 \n 备注为：" + _0x5a8d08 + "的饿了么登录已失效，请重新登录", {
-        "uid": _0x45affd.get("wxUid")
-    });
+    await sendNotify("登录失效通知", "### 通知 \n 备注为：" + _0x5a8d08 + "的饿了么登录已失效，请重新登录");
 }
 function _0x581038(_0x3ee6a8, _0x331fee, _0x5ebcd6, _0x3b8031, _0x62511f, _0x3db869, _0x1103dd, _0x5cee9e, _0x562fe3) {
     return new Promise((_0x2c8c7e, _0x53d992) => {
