@@ -1,8 +1,11 @@
-/**
- * 饿了么食神
- * cron: 20 8,18 * * *
- * const $ = new Env("饿了么食神");
- */
+ //
+ // @平行绳 飞机频道：https://t.me/tigerorrose
+ // 变量：elmck: 必填，账号cookie，短信登录面板项目地址：https://github.com/funaihui/eleWeb
+ // cron: 11 5,16 * * *
+ // 2023.11.7 更新：首次发布；
+ // 2024.02.26 更新：打印错误日志；
+ // const $ = new Env('食神客栈');
+
 const {
     validateCarmeWithType: _0xd12380,
     commonRequest: _0x5da2a0,
@@ -13,7 +16,7 @@ const {
     tryCatchPromise: _0x358f23,
     checkCk: _0x507b71,
     getToken
-  } = require("./common.js"),
+  } = require("./common1.js"),
   md5 = require("md5"),
   _0x34af9d = require("request"),
   _0x1b471c = process.env.ELE_CARME,
@@ -340,7 +343,7 @@ async function _0x46037d(_0x3ca94c, _0x2f232c) {
 }
 async function _0x5be252() {
   await _0xd12380(_0x1b471c, 1);
-  const _0x5f9ed = _0x14503f("ELE_CARME");
+  const _0x5f9ed = _0x14503f("elmck");
   for (let _0x1c70c2 = 0; _0x1c70c2 < _0x5f9ed.length; _0x1c70c2++) {
     let _0x244cdb = _0x5f9ed[_0x1c70c2];
     _0x244cdb = await _0x507b71(_0x244cdb, _0x1c70c2, _0x1b471c, 1);
@@ -373,8 +376,8 @@ async function _0x5be252() {
          console.log(_0x2f18c9.msg)
          break;
      }else{
-         console.log("等待5分钟")
-         await _0x1e0e6b(5*60);
+         console.log("等待1分钟")
+         await _0x1e0e6b(1*60);
      }
  }
     // _0x2f18c9.msg ? console.log(_0x2f18c9.msg) : console.log("领取金币成功，当前金币：" + _0x2f18c9.value);
