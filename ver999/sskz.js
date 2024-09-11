@@ -110,7 +110,7 @@ async function _0x457235 (_0x3e73c2, _0x41297f, _0x18d496) {
 
                     _0x3a77cc(_0x4f973a);
                 } catch (_0x27a6e2) {
-                    console.log(_0x5f1995);
+                    console.log("error3",_0x5f1995);
 
                     _0x3a77cc(null);
                 }
@@ -222,7 +222,7 @@ async function _0x98343b () {
         let _0x4539d8 = await _0x567544(_0x367b10, _0x44145f);
 
         if (_0x4539d8.errcode) {
-            console.log(_0x4539d8.errcode);
+            console.log("err1:",_0x4539d8.errcode);
         } else {
             console.log("领取金币成功，当前金币：" + _0x4539d8.value);
         }
@@ -232,7 +232,7 @@ async function _0x98343b () {
             _0x4539d8 = await _0x567544(_0x367b10, _0x44145f);
 
             if (_0x4539d8.errcode) {
-                console.log(_0x4539d8.errcode);
+                console.log("err2:",_0x4539d8.errcode);
             } else {
                 console.log("领取金币成功，当前金币：" + _0x4539d8.value);
             }
