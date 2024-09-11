@@ -14,7 +14,7 @@ const {
     "checkCk": checkCk,
     getUserInfo,
     wait,
-} = require("../common.js");
+} = require("./common.js");
 
 function updateCookie(tkCookie, encCookie, cookieStr) {
     // 合并带_m_h5_tk

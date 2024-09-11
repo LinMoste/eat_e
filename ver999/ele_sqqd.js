@@ -15,10 +15,10 @@ const request = require("request"),
   checkCarmeCount,
   tryCatchPromise,
   getbxua
-} = require("../common.js"),
+} = require("./common.js"),
       {
   sign
-} = require("../common"),
+} = require("./common"),
       GAME_TYEP = 7,
       wait_time = process.env.sq_wait_time || 30,
       kami = process.env.ELE_CARME;
