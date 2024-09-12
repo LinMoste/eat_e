@@ -22,7 +22,7 @@ import string
 import base64  
 
 def rsa_encrypt(public_key_pem, data_str):
-    url = 'http://mzkj666.cn:9324/encrypt'
+    url = 'http://172.16.33.7:32768/encrypt'
     data = {
         'publicKeyPem': public_key_pem,
         'dataStr': data_str

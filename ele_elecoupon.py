@@ -348,10 +348,10 @@ async def main(cookies):
 
 # 主函数
 if __name__ == '__main__':
-    if 'elmqqck' in os.environ:
-        cookie = os.environ.get('elmqqck')
+    if 'elmck' in os.environ:
+        cookie = os.environ.get('elmck')
     else:
-        print("环境变量中不存在[elmqqck],启用本地变量模式")
+        print("环境变量中不存在[elmck],启用本地变量模式")
         cookie = ck
     if cookie == "":
         print("本地变量为空，请设置其中一个变量后再运行")

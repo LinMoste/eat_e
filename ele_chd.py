@@ -276,6 +276,8 @@ if __name__ == '__main__':
     else:
         print("环境变量中不存在[elmck],启用本地变量模式")
         cookie = ck
+
+    print("cookie = ",cookie)
     if cookie == "":
         print("本地变量为空，请设置其中一个变量后再运行")
         exit(-1)
