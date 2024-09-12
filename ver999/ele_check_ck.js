@@ -23,6 +23,7 @@ const {
 } = require("./common.js");
 
 const _0x11f78e = require("moment");
+const {sendNotify} = require("./sendNotify");
 
 function _0x543ec4(_0x3fdeea, _0x4dabab) {
     return Math.floor(Math.random() * (_0x4dabab - _0x3fdeea + 1) + _0x3fdeea);
@@ -137,10 +138,12 @@ async function _0x179175(data, context, options) {
                     if (deshaune && deshaune.indexOf("刷新成功") !== -1) {
                         await EnableCk(houda);
                         console.log("第", mackala + 1, "账号正常😁\n");
+                         sendNotify("elmtoken续期成功", ("第" + (mackala + 1) + "号😁 ;" + deshaune))
                     } else {
                         const lakeyah = await DisableCk(houda);
                         if (lakeyah.code === 200) {
                             console.log("第", mackala + 1, "账号失效！已🈲用");
+                            sendNotify("elmtoken失效，禁用", ("第" + (mackala + 1) + "号😁 ;" + lakeyah))
                         } else {
                             console.log("第", mackala + 1, "账号失效！请重新登录！！！😭");
                         }
@@ -153,10 +156,12 @@ async function _0x179175(data, context, options) {
                         if (rudolphe && rudolphe.indexOf("刷新成功") !== -1) {
                             await EnableCk(houda);
                             console.log("第", mackala + 1, "账号正常😁\n");
+                            sendNotify("elmtoken续期成功", ("第" + (mackala + 1) + "号😁 ;" + rudolphe))
                         } else {
                             const jericca = await DisableCk(houda);
                             if (jericca.code === 200) {
                                 console.log("第", mackala + 1, "账号失效！已🈲用");
+                                sendNotify("elmtoken失效，禁用", ("第" + (mackala + 1) + "号😁 ;" + jericca))
                             } else {
                                 console.log("第", mackala + 1, "账号失效！请重新登录！！！😭");
                             }
