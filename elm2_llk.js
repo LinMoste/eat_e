@@ -14,7 +14,7 @@ const {
     getToken,
     checkCk,
     getUserInfo
-} = require("./common2.js");
+} = require("./common.js");
 const request = require("request");
 
 async function getGameToken(cookie) {
