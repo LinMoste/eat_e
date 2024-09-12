@@ -1,7 +1,7 @@
 /**
  * 变量：elmck: 必填
- * cron: 0 21 * * *
- * name: 饿了么续期
+ * cron: 2 42 21 * * *
+ * name: 饿了么自动刷新CK
  */
 const {
     getEnvsByName,
@@ -92,7 +92,7 @@ async function _0x179175(data, context, options) {
             let userID = cookieMap.get("USERID");
             let userEnvironment = await getEnvByUserId(userID);
 
-            
+
 
             let successMessage = "刷新成功: " + expiryDate;
 
@@ -171,8 +171,7 @@ async function _0x179175(data, context, options) {
                 console.log(hannelore);
             }
         }
-      await wait(_0x543ec4(1, 3));
+        await wait(_0x543ec4(1, 3));
     }
     process.exit(0);
 }());
-
