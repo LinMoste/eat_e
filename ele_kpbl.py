@@ -13,8 +13,7 @@ from requests import RequestException
 
 host = 'https://acs.m.goofish.com'
 
-ck = ''
-
+ck = 'cookie2=296b7e5458e2c8368b1335087ad0dfa9e;unb=2215555579505;USERID=3100017122279;SID=MWFhODgzZDI4OTQ2NjhmNTdhNDUxNTZlMzFjNDgyNmJlElnAyN6E0zntf1cmFTwSAA;token=1_idc_1_2147ca4ee435f559ed3d1fb44e03bacfec03e83dff9309400d9dbbb29d077d62392d7a1c22f1267b071897d4f3127b99497ca783592c59e96d8f7a08c226daed07861b1070cdc9fb37e70b342d62e0ace26ba8d43cb99d28f491ce194ddaa2a24cebc031c176f2d71a3a80956cc1168935b55dec570129abeda8d2cf4cf39241;utdid=ZuLYK0WL40sDAI21HBuI78Fd;deviceId=AkhDs6oJEECbwLGdh31T-dZnoVVP8JhjSY13dWTW00x1;umt=VXQBggxLPAEqlgKR5gmvuc1OHIEKUKBL;'
 
 import json
 import random
@@ -61,7 +60,7 @@ def xsign(api, data, uid, sid, wua, v):
         'ttid': '1551089129819@eleme_android_10.14.3',
         "v": v
     }
-
+    print("sign body = :", body)
     try:
         r = requests.post(
             "http://172.16.33.7:32768/api/getXSign",
@@ -108,6 +107,11 @@ def req(api, data, uid, sid, wua='False', v="1.0"):
 
         max_retries = 5
         retries = 0
+        print("\n\n\n===================reqInfoStart===============")
+        print("url=", url)
+        print("headers=", headers)
+        print("body=", params)
+        print("===================reqInfoEnd==============")
         while retries < max_retries:
             try:
                 res = requests.post(url, headers=headers, data=params, timeout=5)
@@ -316,9 +320,9 @@ class TYT:
         data = json.dumps({"bizScene": "CAPYBARA", "bizMethod": "getTasks",
                            "bizParam": "{\"gameId\":\"" + self.gameId + "\",\"token\":\"" + self.token + "\"}",
                            "longitude": "104.09800574183464", "latitude": "30.22990694269538"})
-        
+
         res = req(api, data, self.uid, self.sid, "1.0")
-        print(f"获取任务列表",res.text)
+        print(f"获取任务列表", res.text)
 
         if res.json()['ret'][0] == 'SUCCESS::调用成功':
             self.taskList = json.loads(res.json()["data"]["data"])
@@ -370,16 +374,17 @@ class TYT:
         else:
             print(f"[{self.name}] T003 任务未开始！先做任务")
             return 'T003'
-            
+
         return True
-    def postTask(self,taskId):
+
+    def postTask(self, taskId):
         api = 'mtop.alsc.playgame.mini.game.dispatch'
         data = json.dumps({"bizScene": "CAPYBARA", "bizMethod": "finisheTask",
                            "bizParam": "{\"taskId\":\"" + taskId + "\",\"gameId\":\"" + self.gameId + "\",\"token\":\"" + self.token + "\"}",
                            "longitude": "104.09800574183464", "latitude": "30.22990694269538"})
-        
+
         res = req(api, data, self.uid, self.sid, "1.0")
-        print(f"完成任务{taskId}",res.text)
+        print(f"完成任务{taskId}", res.text)
         if res.json()['ret'][0] == 'SUCCESS::调用成功':
             # print(res.json())
             nested_data = json.loads(res.json()['data']['data'])
@@ -391,25 +396,24 @@ class TYT:
             return False
         return False
 
-
-    def daoju(self,count):
+    def daoju(self, count):
         api = 'mtop.alsc.playgame.mini.game.dispatch'
         bizParam = json.dumps({
-            "levelId":"1",
-            "itemId":f"It100{random.randint(1, 3)}",
-            "removeFoods":{
-                "Food1003":random.randint(1, 10),
-                "Food1002":random.randint(1, 10),
-                "Food1004":random.randint(1, 3)
+            "levelId": "1",
+            "itemId": f"It100{random.randint(1, 3)}",
+            "removeFoods": {
+                "Food1003": random.randint(1, 10),
+                "Food1002": random.randint(1, 10),
+                "Food1004": random.randint(1, 3)
             },
-            "gameId":self.gameId,
-            "token":self.token,
+            "gameId": self.gameId,
+            "token": self.token,
         })
         data = json.dumps({
-            "bizScene":"CAPYBARA",
-            "bizMethod":"useGameProp",
-            "bizParam":bizParam,
-            "longitude": "104.09800574183464", 
+            "bizScene": "CAPYBARA",
+            "bizMethod": "useGameProp",
+            "bizParam": bizParam,
+            "longitude": "104.09800574183464",
             "latitude": "30.22990694269538"
         })
         try:
@@ -420,7 +424,7 @@ class TYT:
                 count = count + 1
                 return count
             else:
-                print(f'[{self.name}] ❎第{count}次使用道具失败！！！',res.text)
+                print(f'[{self.name}] ❎第{count}次使用道具失败！！！', res.text)
                 return count
         except Exception as e:
             print(f"[{self.name}] ❎1请求失败，结束使用道具: {e}")
@@ -444,7 +448,6 @@ class TYT:
                         checkRes = self.checkTask()
             else:
                 print(f"----任务已全部完成----")
-
 
 
 if __name__ == '__main__':
