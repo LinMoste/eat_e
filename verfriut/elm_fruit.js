@@ -1,13 +1,18 @@
+/**
+ * 任务名称
+ * name:饿了么果园
+ * 定时规则
+ * cron: 1 6 * * *
+ */
 const {
     validateCarmeWithType,
     commonNativeRequest,
-    commonRequest,
     getCookies,
     getUserInfoWithX,
     wait
 } = require("./common.js");
-const _0x55cacc = process.env.elmck;
-const _0x583498 = true;
+const _0x55cacc = process.env.ELE_CARME;
+const _0x583498 = process.env.USE_LYB;
 const _0x40f031 = 24;
 let _0xf7b264;
 function _0x5ce60b(_0x23d286) {
@@ -94,12 +99,11 @@ async function _0x167ee0(_0x5da826, _0xaf8cdb) {
     }
 }
 async function _0x2ca855(_0x6d5af2) {
-    let _0x54aeb1 = "mtop.alsc.playgame.orchard.index.batch.query";
+    let _0x54aeb1 = "mtop.alsc.activity.bpgw.batchqueryblock.login";
     try {
-        // const _0xb1d63e = {
-        //   userId: _0xf7b264
-        // };
-        const _0xb1d63e = {"blockRequestList":"[{\"blockCode\":\"603040_6723057310\",\"status\":\"PUBLISH\",\"tagCallWay\":\"SYNC\",\"useRequestBlockTags\":false}]","source":"KB_ORCHARD","bizCode":"main","locationInfos":"[{\"latitude\":\"\",\"longitude\":\"\",\"lat\":\"\",\"lng\":\"\"}]","extData":"{\"orchardEntrance\":\"chinfo=#alscexsrc=ES0000236371#scene=H5#task=elegudingrukou\",\"ORCHARD_ELE_MARK\":\"KB_ORCHARD\",\"orchardVersion\":\"20240624\"}"}
+        const _0xb1d63e = {
+            userId: _0xf7b264
+        };
         const _0x6233a5 = await commonNativeRequest(_0x6d5af2, _0x54aeb1, _0x40f031, 1, _0xb1d63e);
         if (_0x5ce60b(_0x6233a5.data.data)) {
             console.log(_0x6233a5.ret[0]);
@@ -122,14 +126,11 @@ async function _0x2ca855(_0x6d5af2) {
     }
 }
 async function _0x46beb6(_0x5b2e94) {
-    let _0x31bfdd = "mtop.alsc.playgame.orchard.index.batch.query";//"mtop.alsc.activity.bpgw.batchqueryblock.login";
+    let _0x31bfdd = "mtop.alsc.activity.bpgw.batchqueryblock.login";
     try {
-        // const _0x576485 = {
-        //   userId: _0xf7b264
-        // };
-        const _0x576485 ={"blockRequestList":"[{\"blockCode\":\"603040_6723057310\",\"status\":\"PUBLISH\",\"tagCallWay\":\"ASYNC\",\"useRequestBlockTags\":true,\"blockTags\":[{\"extData\":{\"parent_tag_id\":\"20210826160021352073000000000070\"},\"tagCallWay\":\"ASYNC\",\"tagCode\":\"backpack\",\"tagId\":\"20210826160021348615000000000001\",\"tagName\":\"backpack\",\"tagParam\":{\"options\":[{\"operate\":\"QUERY_LIST\",\"cpnCollectionId\":\"20200629180938315909647596\",\"cpnCode\":\"BAG\"}],\"tagSourceId\":\"20200629151859103125248022\"},\"tagSource\":\"alsc-play\",\"tagSourceId\":\"20200629151859103125248022\",\"tagSourceType\":\"alsc-play\"}]}]","source":"KB_ORCHARD","bizCode":"backpack","locationInfos":"[{\"latitude\":\"\",\"longitude\":\"\",\"lat\":\"\",\"lng\":\"\"}]","extData":"{\"ORCHARD_ELE_MARK\":\"KB_ORCHARD\",\"orchardVersion\":\"20240624\"}"}
-        //const _0x576485 = {"blockRequestList":"[{\"blockCode\":\"603040_6723057310\",\"status\":\"PUBLISH\",\"tagCallWay\":\"SYNC\",\"useRequestBlockTags\":false}]","source":"KB_ORCHARD","bizCode":"main","locationInfos":"[{\"latitude\":\"30.778994858264923\",\"longitude\":\"111.34437896311283\",\"lat\":\"30.778994858264923\",\"lng\":\"111.34437896311283\"}]","extData":"{\"orchardEntrance\":\"chinfo=#alscexsrc=ES0000236371#scene=H5#task=elegudingrukou\",\"ORCHARD_ELE_MARK\":\"KB_ORCHARD\",\"orchardVersion\":\"20240624\"}"};
-        // /debugger
+        const _0x576485 = {
+            userId: _0xf7b264
+        };
         const _0x57ffc3 = await commonNativeRequest(_0x5b2e94, _0x31bfdd, _0x40f031, 8, _0x576485);
         if (_0x5ce60b(_0x57ffc3.data.data)) {
             console.log(_0x57ffc3.ret[0]);
@@ -141,16 +142,14 @@ async function _0x46beb6(_0x5b2e94) {
         console.log(_0x2f450d);
     }
 }
-//浇水
 async function _0x3d2f54(_0x51085b, _0x1ad324, _0x59103a = "462") {
     let _0x49e850 = "mtop.alsc.playgame.orchard.roleoperate.useprop";
     try {
-        // const _0x11b859 = {
-        //   templateId: _0x59103a,
-        //   roleId: _0x1ad324,
-        //   userId: _0xf7b264
-        // };
-        const _0x11b859 ={"propertyTemplateId":_0x59103a,"roleId":_0x1ad324,"roleType":"KB_ORCHARD","latitude":"","longitude":"","actId":"20200629151859103125248022","collectionId":"20210812150109893985929183","bizScene":"KB_ORCHARD","extParams":"{\"orchardVersion\":\"20240624\",\"popWindowVersion\":\"V2\"}"}
+        const _0x11b859 = {
+            templateId: _0x59103a,
+            roleId: _0x1ad324,
+            userId: _0xf7b264
+        };
         const _0x487892 = await commonNativeRequest(_0x51085b, _0x49e850, _0x40f031, 9, _0x11b859);
         if (_0x487892.data.errorMsg) {
             console.log(_0x487892.data.errorMsg);
@@ -163,8 +162,6 @@ async function _0x3d2f54(_0x51085b, _0x1ad324, _0x59103a = "462") {
     }
 }
 async function _0x3ec0bd(_0xe0dcfd) {
-    //这里有问题
-    //debugger
     let _0x179f97 = "mtop.ele.playgame.orchard.futurewater.receive";
     try {
         const _0x4a46bb = {
@@ -175,7 +172,7 @@ async function _0x3ec0bd(_0xe0dcfd) {
             console.log(_0x30692d.data.errorMsg);
             return false;
         } else {
-            console.log("领取", _0x30692d?.data?.data?.receiveWater, "g水滴");
+            console.log("领取", _0x30692d.data.data.receiveWater, "g水滴");
         }
     } catch (_0x23c3ba) {
         console.log(_0x23c3ba);
@@ -204,18 +201,15 @@ async function _0x2b8092(_0x3687d1, _0x4b9908) {
         return false;
     }
 }
-//浇水 几次 中途出现的红包
 async function _0x3ab0af(_0x1a9eb4, _0x434900, _0x9fbe63) {
-    debugger
     let _0x586cb8 = "mtop.koubei.interactioncenter.orchard.processreward.receive";
     try {
-        // const _0x5ad8f3 = {
-        //   roleId: _0x434900,
-        //   rewardId: _0x9fbe63,
-        //   requestId: new Date().getTime(),
-        //   userId: _0xf7b264
-        // };
-        const _0x5ad8f3 = {"roleId":_0x434900,"rewardId":_0x9fbe63,"longitude":"","latitude":"","bizScene":"KB_ORCHARD","requestId":new Date().getTime()}
+        const _0x5ad8f3 = {
+            roleId: _0x434900,
+            rewardId: _0x9fbe63,
+            requestId: new Date().getTime(),
+            userId: _0xf7b264
+        };
         const _0xe0ab06 = await commonNativeRequest(_0x1a9eb4, _0x586cb8, _0x40f031, 12, _0x5ad8f3);
         if (_0x5ce60b(_0xe0ab06.data.data)) {
             return false;
@@ -233,10 +227,9 @@ async function _0x3ab0af(_0x1a9eb4, _0x434900, _0x9fbe63) {
 async function _0x4efa42(_0x2e5ac2) {
     let _0x3419b6 = "mtop.koubei.interactioncenter.orchard.sign.querysigninfo";
     try {
-        // const _0x15f87c = {
-        //   userId: _0xf7b264
-        // };
-        const _0x15f87c ={"latitude":"","longitude":"","bizScene":"orchard_signin"}
+        const _0x15f87c = {
+            userId: _0xf7b264
+        };
         const _0x4bb3f2 = await commonNativeRequest(_0x2e5ac2, _0x3419b6, _0x40f031, 6, _0x15f87c);
         if (_0x5ce60b(_0x4bb3f2.data.data)) {
             return false;
@@ -267,17 +260,12 @@ function _0x3197bd() {
 }
 async function _0x1d02ce(_0x59c5b2, _0xb06469) {
     let _0x2d98cb = "mtop.koubei.interactioncenter.orchard.sign.receivesigninaward";
-    // const data_ = {
-    //   signInDate: _0x3197bd(),
-    //   prizeNumId: _0xb06469,
-    //   userId: _0xf7b264
-    // }
-    const data_ = {"latitude":"","longitude":"","signInDate": _0x3197bd(),"bizScene":"orchard_signin","extInfo":"{\"prizeNumId\":\""+_0xb06469+"\"}"}
     try {
-
-        const _0x2d3adc = await commonNativeRequest(_0x59c5b2, _0x2d98cb, _0x40f031, 7,data_);
-
-
+        const _0x2d3adc = await commonNativeRequest(_0x59c5b2, _0x2d98cb, _0x40f031, 7, {
+            signInDate: _0x3197bd(),
+            prizeNumId: _0xb06469,
+            userId: _0xf7b264
+        });
         if (_0x2d3adc.data.errorMsg) {
             console.log(_0x2d3adc.data.errorMsg);
         } else {
@@ -309,10 +297,9 @@ async function _0x128d37(_0x3376cb, _0x2c30d7) {
 async function _0x24461c(_0x316eab) {
     let _0x148806 = "mtop.ele.biz.growth.task.core.querytask";
     try {
-        // const _0x1c63c3 = {
-        //   userId: _0xf7b264
-        // };
-        const _0x1c63c3 = {"missionCollectionId":"1635","locationInfos":"[\"{\\\"lng\\\":111.34437896311283,\\\"lat\\\":30.778994858264923}\"]","accountPlan":"HAVANA_COMMON"}
+        const _0x1c63c3 = {
+            userId: _0xf7b264
+        };
         const _0x53e3c2 = await commonNativeRequest(_0x316eab, _0x148806, _0x40f031, 2, _0x1c63c3);
         if (_0x53e3c2.data.errorMsg) {
             console.log(_0x53e3c2.data.errorMsg);
