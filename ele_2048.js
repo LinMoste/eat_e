@@ -24,7 +24,7 @@ const moment = require("moment");
 
 const md5 = require("md5");
 
-const kami = process.env.ELE_CARME;
+const kami = process.env.elmck;
 
 async function gameRequest(_0x108364, _0x2cb520) {
   const _0x14ca42 = {

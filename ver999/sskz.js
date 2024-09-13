@@ -16,7 +16,7 @@ const {
         checkCk: checkCk
     } = require("./common.js"),
     _0x286a61 = require("request"),
-    _0x127a18 = process.env.ELE_CARME,
+    _0x127a18 = process.env.elmck,
     _0x5210b0 = 23,
     _0x3d6440 = require("md5");
 

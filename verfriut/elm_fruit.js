@@ -11,7 +11,7 @@ const {
     getUserInfoWithX,
     wait
 } = require("./common.js");
-const _0x55cacc = process.env.ELE_CARME;
+const _0x55cacc = process.env.elmck;
 const _0x583498 = process.env.USE_LYB;
 const _0x40f031 = 24;
 let _0xf7b264;

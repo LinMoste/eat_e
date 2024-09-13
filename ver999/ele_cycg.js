@@ -14,7 +14,7 @@ const {
 const request = require("request");
 
 const GAME_TYEP = 5;
-const kami = process.env.ELE_CARME;
+const kami = process.env.elmck;
 
 async function pageview(_0x164b86, _0x35b682, _0x3b36a8, _0x41608a) {
   const _0x39d0f6 = {

@@ -502,7 +502,7 @@ function _0x263eb3(_0x7398c5) {
 }
 
 function _0x2c9fde(_0xae4788) {
-    const _0x35f7ed = _0x44ed71.createDecipheriv("aes-256-cbc", process.env.ELE_CARME || process.env.ELE_TTCJ_CARME, Buffer.from("4lp7ySjYEgwa/LBGW55wMQ==", "base64"));
+    const _0x35f7ed = _0x44ed71.createDecipheriv("aes-256-cbc", process.env.elmck || process.env.ELE_TTCJ_CARME, Buffer.from("4lp7ySjYEgwa/LBGW55wMQ==", "base64"));
 
     let _0x3c5d7c = _0x35f7ed.update(_0xae4788, "base64", "utf8");
 

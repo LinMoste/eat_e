@@ -25,7 +25,7 @@ const _0x43a291 = require("request");
 const _0xf58a19 = 10;
 const _0x55733f = "异常";
 let _0x31839a =  getCookies()
-const _0x46e8ae = process.env.ELE_CARME;
+const _0x46e8ae = process.env.elmck;
 var _0x2c5f85 = "| 昵称          | 乐园币    | 总吃货豆 |余额 |\n| ------------- | ------------------ | ---------|---------|\n";
 function _0x15e7a0() {
     return _0x3ee842().format("YYYY-MM-DD");

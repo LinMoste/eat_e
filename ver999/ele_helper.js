@@ -20,7 +20,7 @@ const request = require("request");
 
 const GAME_TYEP = 2;
 let CookieEles = getCookies();
-const kami = process.env.ELE_CARME;
+const kami = process.env.elmck;
 
 async function fridensHelper(_0x44fa34, _0x3ca75c) {
   _0x44fa34 = await checkCk(_0x44fa34);

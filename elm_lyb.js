@@ -19,7 +19,7 @@
     wait
   } = require("./common"),
   GAME_TYEP = 6,
-  kami = process.env.ELE_CARME;
+  kami = process.env.elmck;
 function isEmpty(_0x382618) {
   return Object.values(_0x382618).length === 0;
 }

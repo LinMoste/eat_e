@@ -18,7 +18,7 @@ const {
 const request = require("request");
 
 const GAME_TYEP = 17;
-const kami = process.env.ELE_CARME;
+const kami = process.env.elmck;
 
 async function query_task(_0x26773f) {
   const _0x34f3dc = {

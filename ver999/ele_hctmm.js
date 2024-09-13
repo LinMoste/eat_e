@@ -20,7 +20,7 @@ const {
   validateCarmeWithType
 } = require("./common");
 
-const kami = process.env.ELE_CARME;
+const kami = process.env.elmck;
 const GAME_TYEP = 14;
 
 async function pageview(_0x4ee77b, _0x3c1018, _0x92595d, _0x1b4697) {

@@ -375,7 +375,7 @@ function _0x263eb3(_0x7398c5) {
   return _0x3bab99.toString("base64");
 }
 function _0x2c9fde(_0xae4788) {
-  const _0x35f7ed = _0x44ed71.createDecipheriv("aes-256-cbc", process.env.ELE_CARME || process.env.ELE_TTCJ_CARME, Buffer.from("4lp7ySjYEgwa/LBGW55wMQ==", "base64"));
+  const _0x35f7ed = _0x44ed71.createDecipheriv("aes-256-cbc", process.env.elmck || process.env.ELE_TTCJ_CARME, Buffer.from("4lp7ySjYEgwa/LBGW55wMQ==", "base64"));
   let _0x3c5d7c = _0x35f7ed.update(_0xae4788, "base64", "utf8");
   _0x3c5d7c += _0x35f7ed.final("utf8");
   return _0x3c5d7c;
@@ -386,10 +386,10 @@ function _0x235b2e(_0x82a409, _0x51972d, _0x4a4231, _0x52a5f9, _0x411ecc, _0x5bd
     return "";
   }
   let _0x5c4368 = {
-    carmi: process.env.ELE_CARME || process.env.ELE_TTCJ_CARME,
+    carmi: process.env.elmck || process.env.ELE_TTCJ_CARME,
     userId: _0x411ecc,
     gameType: _0x51d6f6,
-    carmiEncrpt: _0x263eb3(process.env.ELE_CARME || process.env.ELE_TTCJ_CARME),
+    carmiEncrpt: _0x263eb3(process.env.elmck || process.env.ELE_TTCJ_CARME),
     needSignData: {
       data: _0x82a409,
       api: _0x51972d,
@@ -530,7 +530,7 @@ async function _0x319dd8(_0x3cb055, _0x59d48e) {
 }
 function _0x581038(_0x4bc536, _0x167ae5, _0x4e83b3, _0x47d0b6, _0x47a700, _0x56ac94, _0x2cb8b6, _0x487227) {
   let _0x410612 = {
-    carmi: process.env.ELE_CARME || process.env.ELE_TTCJ_CARME,
+    carmi: process.env.elmck || process.env.ELE_TTCJ_CARME,
     needSignData: {
       data: _0x4bc536,
       api: _0x167ae5,

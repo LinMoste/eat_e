@@ -114,7 +114,7 @@ async function _0x179175(data, context, options) {
 
 
 (async function _0x1f3fe2() {
-    const aleo = process.env.ELE_CARME;
+    const aleo = process.env.elmck;
     await validateCarmeWithType(aleo, 1);
     const pragati = await getEnvsByName("elmck");
     console.log("token = ",pragati)

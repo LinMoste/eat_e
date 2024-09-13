@@ -21,7 +21,7 @@ const request = require("request"),
 } = require("./common"),
       GAME_TYEP = 7,
       wait_time = process.env.sq_wait_time || 30,
-      kami = process.env.ELE_CARME;
+      kami = process.env.elmck;
 
 function isEmpty(_0x5d1556) {
   return Object.values(_0x5d1556).length === 0;
