@@ -1,3 +1,9 @@
+/**
+ * 任务名称
+ * name: elmgy
+ * 定时规则
+ * cron: 1 6,12,18 * * *
+ */
 const {
     validateCarmeWithType,
     commonNativeRequest,
