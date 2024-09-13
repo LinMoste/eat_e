@@ -665,7 +665,7 @@ function _0x57c4d6(_0x682df3, _0x5a93e1, _0x40150c, _0x1eb753, _0x554274, _0x413
         "body": JSON.stringify(_0x13b82d)
     };
 
-    console.log("sign param = ", _0x13b82d)
+    // console.log("sign param = ", _0x13b82d)
     _0xd775e0["headers"]["content-type"] = "application/json";
     return _0x5bcbae(_0x1757c5 => {
         _0x3a1b91(_0xd775e0, async (_0x1d3a25, _0x33eac7, _0x6c2d1c) => {
