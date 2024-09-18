@@ -231,9 +231,7 @@ async function _0xf7ccac(_0x1e0e27, _0x54f7f5) {
 }
 async function _0x378f6c(_0x429356, _0x16a72b) {
 
-  await sendNotify("饿了么资产推送", _0x16a72b, {
-            uid: _0x220a27.get("wxUid")
-        });
+  await sendNotify("饿了么资产推送", _0x16a72b);
 }
 async function _0x163ae7() {
     await validateCarmeWithType(_0x46e8ae, 1);
